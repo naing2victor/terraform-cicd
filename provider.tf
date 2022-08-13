@@ -5,11 +5,6 @@ terraform {
       version = "~> 4.25"
     }
   }
-  backend "s3" {
-    bucket = "nnh-tf-state"
-    key    = "tf-backend/terraform.tfstate"
-    region = "us-east-1"
-  }
   cloud {
     organization = "example-org-d07a05"
 
