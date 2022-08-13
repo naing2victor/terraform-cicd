@@ -34,9 +34,9 @@ resource "aws_s3_bucket_public_access_block" "s3" {
 }
 
 resource "aws_dynamodb_table" "dynamodb" {
-  name           = var.name
-  billing_mode   = "PAY_PER_REQUEST"
-  hash_key       = "LockID"
+  name         = var.name
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key     = "LockID"
 
   attribute {
     name = "LockID"
